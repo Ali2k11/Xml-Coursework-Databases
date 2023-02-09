@@ -1,0 +1,14 @@
+<!ELEMENT transactions (shop)*>
+<!ELEMENT shop (date)*> 
+<!ELEMENT date (transaction)*>
+<!ELEMENT transaction (transactionID,key, value,customer,prefix,givenName,lastName,addressID)*>
+<!ELEMENT transactionID (#PCDATA)>
+<!ENTITY key "XVbtdIyzELBCrrqyRHPckSkkFGPhMvd98RBJ1RPoSKZ10y4wRYOsmRwQ6WdJ">
+<!ATTLIST value currency CDATA #REQUIRED>
+<!ELEMENT customer (#PCDATA)>
+<!ELEMENT prefix (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ATTLIST value currency CDATA #REQUIRED> 
+<!ELEMENT givenName (#PCDATA)> 
+<!ELEMENT lastName (#PCDATA)> 
+<!ELEMENT addressID (#PCDATA)>
